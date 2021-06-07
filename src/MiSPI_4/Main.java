@@ -16,6 +16,8 @@ import javax.management.MalformedObjectNameException;
 import javax.management.NotCompliantMBeanException;
 import javax.management.ObjectName;
 
+import javax.management.Notification;
+import javax.management.NotificationBroadcasterSupport;
 
 public class Main {
     public static Vector History = new Vector();
@@ -138,6 +140,8 @@ public class Main {
 
                 System.out.println(StatisticVariable);
             }
+
+
             counter.setFalseCounter(FalseCount);
             counter.setShotCounter(ShotCount);
 
